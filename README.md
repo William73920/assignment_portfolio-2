@@ -22,8 +22,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/your-username/assignment_portfolio-2.git
+   cd assignment_portfolio-2
 2.**Install dependencies:**
 
   ```bash
