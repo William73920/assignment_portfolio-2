@@ -7,7 +7,7 @@
   -webkit-overflow-scrolling: touch;
   scroll-padding: 0 48px;
   padding: 0 48px;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 .carousel::-webkit-scrollbar {
