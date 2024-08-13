@@ -137,6 +137,7 @@
   .footer_logo {
     width: 150px;
     height: 150px;
+    margin-top: 0;
   }
 
   .footer_links ul {
@@ -154,5 +155,9 @@
 
   .copyright {
     font-size: 10px;
+  }
+
+  .footer {
+    margin-top: 30px;
   }
 }

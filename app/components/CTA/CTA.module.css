@@ -8,7 +8,7 @@
   color: white;
   margin-bottom: 20px;
   margin-top: 139px;
-  /* padding: 0 20px; */
+  padding: 0 20px;
 }
 
 .cta h1 {
@@ -89,6 +89,7 @@
 
   .cta .contact_container button {
     font-size: 16px;
+    padding: 14px 30px;
   }
 }
 
