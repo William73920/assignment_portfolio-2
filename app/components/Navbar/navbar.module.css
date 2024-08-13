@@ -1,0 +1,160 @@
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  font-size: 21px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #1e1e1e;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+
+  width: 200px;
+  height: 67px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 2rem;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.links ul li {
+  cursor: pointer;
+}
+
+.links ul li:hover {
+  color: #fd6f00;
+}
+
+.navbar .button {
+  width: 188px;
+  height: 52px;
+  color: white;
+  background-color: #fd6f00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .navbar {
+    font-size: 15px;
+  }
+
+  .navbar .button {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  .navbar {
+    font-size: 12px;
+  }
+
+  .navbar .button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .navbar .links {
+    display: none;
+  }
+
+  .navbar .burger {
+    display: block;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+
+  .navbar .logo {
+    padding: 0 1rem;
+    width: 150px;
+    height: 50px;
+  }
+
+  .navbar .burger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .open .line1 {
+    transform: rotate(45deg) translate(7px, 6px);
+  }
+
+  .open .line2 {
+    opacity: 0;
+  }
+
+  .open .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .open.links {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all 0.3s ease;
+  }
+
+  .open.links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
