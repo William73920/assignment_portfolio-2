@@ -1,7 +1,7 @@
 # Project Name
 
 [![Next.js](https://img.shields.io/badge/Next.js-v13.0.0-blue)](https://nextjs.org/)  
-Brief description of your project.
+Portfolio Assignment
 
 ## Table of Contents
 
