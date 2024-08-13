@@ -1,11 +1,34 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./Carousel.module.css";
 import Image from "next/image";
 
 const Carousel = ({ testimonials }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [translateValue, setTranslateValue] = useState(70);
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (e.shiftKey) {
+        e.preventDefault();
+      }
+    };
+
+    const carouselElement = carouselRef.current;
+
+    if (carouselElement) {
+      carouselElement.addEventListener("wheel", handleWheel, {
+        passive: false,
+      });
+    }
+
+    return () => {
+      if (carouselElement) {
+        carouselElement.removeEventListener("wheel", handleWheel);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const updateTranslateValue = () => {
@@ -32,7 +55,7 @@ const Carousel = ({ testimonials }) => {
 
   return (
     <>
-      <div className={styles.carousel}>
+      <div className={styles.carousel} ref={carouselRef}>
         {testimonials.map((test, index) => (
           <div
             key={test.id}
