@@ -35,7 +35,7 @@ const Carousel = ({ testimonials }) => {
       if (window.innerWidth <= 390) {
         setTranslateValue(122);
       } else if (window.innerWidth <= 420) {
-        setTranslateValue(115);
+        setTranslateValue(116);
       } else if (window.innerWidth <= 570) {
         setTranslateValue(115);
       } else if (window.innerWidth <= 926) {
