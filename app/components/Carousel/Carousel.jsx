@@ -33,15 +33,15 @@ const Carousel = ({ testimonials }) => {
   useEffect(() => {
     const updateTranslateValue = () => {
       if (window.innerWidth <= 390) {
-        setTranslateValue(120);
+        setTranslateValue(122);
       } else if (window.innerWidth <= 420) {
         setTranslateValue(115);
       } else if (window.innerWidth <= 570) {
-        setTranslateValue(110);
+        setTranslateValue(115);
       } else if (window.innerWidth <= 926) {
-        setTranslateValue(107); // Change to 100% for smaller screens
+        setTranslateValue(110); // Change to 100% for smaller screens
       } else {
-        setTranslateValue(80);
+        setTranslateValue(90);
       }
     };
 
