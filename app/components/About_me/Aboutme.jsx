@@ -8,7 +8,7 @@ import "react-range-slider-input/dist/style.css";
 
 const Aboutme = () => {
   return (
-    <div className={styles.aboutme}>
+    <div className={styles.aboutme} id="about">
       <div className={styles.aboutme_img}>
         <div className={styles.circle}>
           <div className={styles.blinder}></div>

@@ -6,67 +6,12 @@ import webdesign1 from "../../../public/webdesign1.png";
 import webdesign2 from "../../../public/webdesign2.png";
 import webdesign3 from "../../../public/webdesign3.png";
 import gsap from "gsap";
+import { categories, projects } from "@/app/constants/data";
 
 const Myprojects = () => {
   const [selectedCategory, setCategory] = useState("All");
 
   const projectRef = useRef([]);
-
-  const categories = [
-    "All",
-    "Web Design",
-    "App Design",
-    "Graphic Design",
-    "UI/UX",
-  ];
-  const projects = [
-    {
-      id: 1,
-      title: "Portfolio Website",
-      category: "Web Design",
-      imageUrl: webdesign1,
-    },
-    {
-      id: 2,
-      title: "Mobile Banking App",
-      category: "App Design",
-      imageUrl: webdesign2,
-    },
-    {
-      id: 3,
-      title: "E-commerce Website",
-      category: "UI/UX",
-
-      imageUrl: webdesign3,
-    },
-    {
-      id: 4,
-      title: "Brand Logo Design",
-      category: "Graphic Design",
-      imageUrl: webdesign1,
-    },
-    {
-      id: 5,
-      title: "Social Media App",
-      category: "App Design",
-
-      imageUrl: webdesign2,
-    },
-    {
-      id: 6,
-      title: "Corporate Website Redesign",
-      category: "Web Design",
-
-      imageUrl: webdesign3,
-    },
-    {
-      id: 7,
-      title: "Marketing Campaign Graphics",
-      category: "Graphic Design",
-
-      imageUrl: webdesign1,
-    },
-  ];
 
   const filteredProjects =
     selectedCategory === "All"
@@ -82,7 +27,7 @@ const Myprojects = () => {
   }, [selectedCategory, filteredProjects.length]);
 
   return (
-    <div className={styles.myprojects}>
+    <div className={styles.myprojects} id="projects">
       <h1>My Projects</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris

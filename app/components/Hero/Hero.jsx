@@ -6,7 +6,7 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="home">
       <div className={styles.heroText}>
         <p>Hi, I am</p>
         <h1 className={styles.heroH1} style={{ color: "#FD6F00" }}>

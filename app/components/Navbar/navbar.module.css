@@ -50,6 +50,11 @@
   cursor: pointer;
 }
 
+.links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 .links ul li:hover {
   color: #fd6f00;
 }

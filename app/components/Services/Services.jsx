@@ -8,7 +8,7 @@ import graphicdesign from "../../../public/graphic.png";
 
 const Services = () => {
   return (
-    <div className={styles.services}>
+    <div className={styles.services} id="services">
       <h1>Services</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh

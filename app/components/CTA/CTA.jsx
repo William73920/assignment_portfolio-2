@@ -3,7 +3,7 @@ import styles from "./CTA.module.css";
 
 const CTA = () => {
   return (
-    <div className={styles.cta}>
+    <div className={styles.cta} id="contact">
       <h1>Lets Design Together </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
